@@ -1,0 +1,3 @@
+/Users/ONLYPROGRAMMING/Desktop/Optional/optional/build/CMakeFiles/optional.dir
+/Users/ONLYPROGRAMMING/Desktop/Optional/optional/build/CMakeFiles/edit_cache.dir
+/Users/ONLYPROGRAMMING/Desktop/Optional/optional/build/CMakeFiles/rebuild_cache.dir
