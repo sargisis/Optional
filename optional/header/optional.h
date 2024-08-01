@@ -9,7 +9,7 @@
 #include <memory>
 #include <new>
 
-namespace Optional
+namespace opt
 {
   template <typename T>
   class optional
@@ -374,9 +374,9 @@ namespace Optional
     {
       if (this_value)
       {
-        return *this; // Return a copy of *this if it contains a value
+        return *this;
       }
-      return {}; // Invoke the callable f and return its result
+      return {};
     }
 
     // modifiers
@@ -411,14 +411,13 @@ namespace Optional
     }
 
   private:
-    
-      T val;
-  
+    T val;
+
     bool this_value;
   };
 
   template <typename T>
-  class optional<T>::bad_optional_access : public std::exception
+  class optional<T>::bad_optional_access : protected std::exception
   {
   public:
     bad_optional_access() = default;
@@ -431,6 +430,6 @@ namespace Optional
       return "Optional does not contain a value";
     }
   };
-  
-#endif //
+
+#endif // end  Optional
 }
